@@ -53,7 +53,7 @@
 <section class="mt-5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 mb-3">
                 <div class="product-gallery">
                     <div class="main-image">
                         <a href="#"><img id="mainImage" class="product-main-img" src="{{asset('frontend')}}/img/product.jpg" alt="Main product image"></a>
@@ -102,11 +102,14 @@
                     </ul>
                 </div>
             </div>
-            <marquee behavior="" direction="" style="background-color: #f8f9fa; padding: 10px; border: 2px solid #343a40; border-radius: 5px; font-family: Arial, sans-serif; color: #343a40;">
+            <div style="color: #333; font-family: 'Arial', sans-serif; padding: 20px; border: 1px solid #ddd; border-radius: 4px; background-color: #f9f9f9;">
                 <h5 style="margin: 0; font-size: 18px;">
-                    এটি আমাদের রেডি ই-কমারর্স সফটওয়ার। এছাড়াও আপনার প্রয়োজন অনুযায়ী যদি কোনো ফিচার এড করতে হয় বা বাদ দিতে হয় অথবা যদি আপনি আপনার মতো করে কোনো কাস্টম ই-কমারর্স ওয়েবসাইট বানাতে চান তাহলেও আমাদের সাথে যোগাযোগ করতে পারেন।
+                    এটি আমাদের রেডি ই-কমার্স সফটওয়ার। এছাড়াও আপনার প্রয়োজন অনুযায়ী যদি কোনো ফিচার এড করতে হয় বা বাদ দিতে হয় অথবা যদি আপনি আপনার মতো করে কোনো কাস্টম ই-কমারর্স ওয়েবসাইট বানাতে চান তাহলেও আমাদের সাথে যোগাযোগ করতে পারেন।
                 </h5>
-            </marquee>
+            </div>
+            
+            
+            
             <div class="col-lg-12 mt-4" id="jjj">
                 <div class="product-details-tabs">
                     <ul class="nav nav-tabs" id="productTab" role="tablist">
