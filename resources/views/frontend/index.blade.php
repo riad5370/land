@@ -103,13 +103,10 @@
                 </div>
             </div>
             <div style="color: #333; font-family: 'Arial', sans-serif; padding: 20px; border: 1px solid #ddd; border-radius: 4px; background-color: #f9f9f9;">
-                <h5 style="margin: 0; font-size: 18px;">
-                    এটি আমাদের রেডি ই-কমার্স সফটওয়ার। এছাড়াও আপনার প্রয়োজন অনুযায়ী যদি কোনো ফিচার এড করতে হয় বা বাদ দিতে হয় অথবা যদি আপনি আপনার মতো করে কোনো কাস্টম ই-কমারর্স ওয়েবসাইট বানাতে চান তাহলেও আমাদের সাথে যোগাযোগ করতে পারেন।
-                </h5>
-            </div>
-            
-            
-            
+            <h5 style="margin: 0; font-size: 18px;">
+                এটি আমাদের রেডি ই-কমার্স সফটওয়ার। এছাড়াও আপনার প্রয়োজন অনুযায়ী যদি কোনো ফিচার এড করতে হয় বা বাদ দিতে হয় অথবা যদি আপনি আপনার মতো করে কোনো কাস্টম ই-কমারর্স ওয়েবসাইট বানাতে চান তাহলেও আমাদের সাথে যোগাযোগ করতে পারেন।
+            </h5>
+           </div>
             <div class="col-lg-12 mt-4" id="jjj">
                 <div class="product-details-tabs">
                     <ul class="nav nav-tabs" id="productTab" role="tablist">

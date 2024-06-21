@@ -10,9 +10,7 @@
             </a>
             <b class="arrow"></b>
         </li>
-        
-       
-        
+
         {{-- product section --}}
         <li class="@if(in_array(Request::segment(1), ['products', 'categories', 'subcategories', 'brands'])) active open @endif">
             <a href="#" class="dropdown-toggle">
@@ -26,13 +24,6 @@
             <ul class="submenu">
                 <li class="">
                     <a href="{{route('orders')}}">
-                        Order
-                    </a>
-                </li>
-
-
-                <li class="">
-                    <a href="{{route('emailsms')}}">
                         Order
                     </a>
                 </li>

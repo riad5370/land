@@ -62,7 +62,4 @@ class FrontendController extends Controller
         return response()->json(['success' => 'Message Sent!']);
     }
 
-    public function emailSms(){
-        return view('admin.order.emailsend');
-    }
 }

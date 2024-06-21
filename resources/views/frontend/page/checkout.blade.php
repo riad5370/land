@@ -89,7 +89,7 @@
 
 <!--start marquee tag-->
 <div style="background-color: #f8f9fa; font-family: Arial, sans-serif; margin: 0; padding: 0;">
-    <div class="container" style="margin-top: 60px;">
+    <div class="container" style="margin-top: 20px;">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card border-0 shadow-lg rounded">
