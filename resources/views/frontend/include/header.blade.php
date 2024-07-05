@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <a href="https://srcodex.com/">
+                    <a href="{{url('/')}}">
                         <img src="{{asset('frontend')}}/img/xlogo.png" alt="SRCodeX LTD Logo" class="footer-logo" style="max-width: 150px; margin-bottom: px;">
                     </a>
                 </div>

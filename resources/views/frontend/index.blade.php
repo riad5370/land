@@ -1,6 +1,50 @@
 @extends('frontend.include.master')
-@section('body')
+@push('css')
+<style>
+    .container1 {
+        background: linear-gradient(135deg, #f3ec78, #af4261);
+        color: white;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: 20px auto;
+        font-family: 'Arial', sans-serif;
+    }
 
+    .form-container1 {
+        background-color: white;
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+
+    .form-container1 input,
+    .form-container1 button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+    .form-container1 button {
+        background-color: #ff7e5f;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .form-container1 button:hover {
+        background-color: #feb47b;
+    }
+</style>
+@endpush
+@section('body')
 <section class="background-section">
     <div class="overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
         <div class="row" style="display: flex; align-items: center; justify-content: center; height: 100%;">
@@ -11,6 +55,29 @@
         </div>
     </div>
 </section>
+
+<div class="container1">
+    <h4 style="font-size: 24px; margin-bottom: 15px;">১০০% ফ্রি! আমাদের বিশেষজ্ঞদের সাথে আপনার ওয়েবসাইট নিয়ে আলোচনা করুন</h4>
+    <p style="font-size: 18px; line-height: 1.6;">আপনার ওয়েবসাইটের উন্নয়ন ও বিক্রির জন্য আমাদের কন্ট্যালসির সেবা নিন। এখনই রেজিস্ট্রার করুন এবং ফ্রি কনসালটেশনের সুযোগ নিন!</p>
+    <div class="form-container1">
+        <form action="{{route('register.store')}}" method="POST">
+            @csrf
+            <input type="text" name="name" value="{{ old('name') }}" placeholder="আপনার নাম">
+            @error('name')
+                <strong class="text-danger">{{$message}}</strong>
+            @enderror
+            <input type="email" name="email" value="{{ old('email') }}" placeholder="আপনার ইমেইল">
+            @error('email')
+                <strong class="text-danger">{{$message}}</strong>
+            @enderror
+            <input type="number" name="mobile" value="{{ old('mobile') }}" placeholder="আপনার মোবাইল নাম্বার">
+            @error('mobile')
+                <strong class="text-danger">{{$message}}</strong>
+            @enderror
+            <button type="submit">Free Join</button>
+        </form>
+    </div>
+</div>
 
 <section class="bg-light py-3">
     <div class="container">
@@ -86,9 +153,9 @@
                         </span>
                         <span>({{ $totalReview }} reviews)</span>
                     </div>
-                    <div class="product__details__price">$50.00</div>
+                    <div class="product__details__price"><span style="font-size: 25px;">&#2547;</span> 10500</div>
                     <p>Single Vendor PHP-LARAVEL ই-কমার্স ওয়েবসাইট | বুস্টিং করে বেশি সেল জেনারেট করার জন্য  আপনার ওয়েবসাইটের যেন প্রতিদিন কয়েক হাজার ভিজিটর হ্যান্ডেল করতে কোন সমস্যা না হয় তা বিবেচনা করে এই ওয়েবসাইটটি ডেভেলপ করা।</p>
-                    <a href="" class="btn btn-dark">Live Preview</a>
+                    <a href="https://demo.srcodex.xyz/" class="btn btn-dark">Live Preview</a>
                     <a href="{{route('checkout')}}" class="btn btn-primary">Order Now</a>
                     </a>
                     <ul class="mt-2">
